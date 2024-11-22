@@ -148,32 +148,32 @@
 
 
       <script>
-    // JavaScript 实现滚动监听
         document.addEventListener("DOMContentLoaded", () => {
           const navbar = document.getElementById("navbar");
           const aboutUsSection = document.querySelector(".about-us");
-
-      // 滚动事件监听
+        
+          // 滚动事件监听
           window.addEventListener("scroll", () => {
             const sectionTop = aboutUsSection.getBoundingClientRect().top;
             const viewportHeight = window.innerHeight;
-
-// "Let's Talk" 按钮跳转
-            const ctaButton = document.querySelector('.btn');
-
-            ctaButton.addEventListener('click', () => {
-              alert('Thank you for your interest! Redirecting to the contact page...');
-  window.location.href = "contact.html"; // 联系页面链接
-});
-        // 如果滚动到“About Us Section”顶部 50% 的位置，显示导航栏
+        
+            // 如果滚动到“About Us Section”顶部 50% 的位置，显示导航栏
             if (sectionTop <= viewportHeight * 0.5) {
               navbar.classList.add("visible");
             } else {
               navbar.classList.remove("visible");
             }
           });
+        
+          // "Let's Talk" 按钮跳转
+          const ctaButton = document.querySelector('.btn');
+          ctaButton.addEventListener('click', () => {
+            alert('Thank you for your interest! Redirecting to the contact page...');
+            window.location.href = "../Contact Us/Contact Us.html";
+          });
         });
-      </script>
+        </script>
+        
     </body>
     </html>
 
