@@ -1,17 +1,17 @@
-/* 全局默认字体 */
+/* General fonts */
 body {
     font-family: 'Raleway', serif;
-    font-size: 16px; /* 设置基本字体大小 */
+    font-size: 16px; 
 }
 
-/* 标题专用字体 */
+/* headers */
 h1, h2, h3, .banner-content h1, .section-title {
     font-family: 'Cardo', sans-serif;
     font-weight: 700;
-    color: #ffffff; /* 确保标题文字颜色与背景对比清晰 */
+    color: #ffffff; 
 }
 
-/* 特殊部分字体 */
+/* Special part */
 .topnav a, .section-extra, .socialPlatform li a {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -20,62 +20,56 @@ h1, h2, h3, .banner-content h1, .section-title {
 
 
 /*drop down menu*/
-/* 下拉菜单基础样式 */
 .dropdown {
-    position: relative; /* 设置为相对定位 */
+    position: relative; 
     display: inline-block;
 }
 
 .dropdown-menu {
-    display: none; /* 默认隐藏 */
+    display: none; 
     position: absolute;
-    top: 100%; /* 紧贴父元素底部 */
+    top: 100%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
-    padding: 10px 0; /* 上下内边距 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0; 
     margin: 0;
-    list-style: none; /* 移除默认列表样式 */
+    list-style: none; 
     z-index: 100;
-    border-radius: 5px; /* 圆角边框 */
-    min-width: 250px; /* 设置菜单最小宽度 */
-    text-align: left; /* 左对齐菜单内容 */
+    border-radius: 5px; 
+    min-width: 250px; 
+    text-align: left; 
 }
 
 .dropdown-menu li {
-    padding: 5px 10px; /* 增加内边距 */
+    padding: 5px 10px; 
 }
 
 .dropdown-menu li a {
     text-decoration: none;
     color: #000;
-    font-size: 16px; /* 设置字体大小 */
-    line-height: 1.5; /* 增加行高，避免文字挤在一起 */
-    display: block; /* 使链接块级化，点击更方便 */
+    font-size: 16px; 
+    line-height: 1.5; 
+    display: block; 
 }
 
 .dropdown-menu li a:hover {
-    background-color: #32B7A1; /* 设置悬停背景色 */
+    background-color: #32B7A1; 
     color: #fff;
 }
 
-
-/* 鼠标划过时显示下拉菜单 */
 .dropdown:hover .dropdown-menu {
-    display: block; /* 显示菜单 */
+    display: block; 
 }
 
 
 
-
-
-/* 重置样式 */
 html, body {
     margin: 0;
     padding: 0;
   }
   
-  /* Banner 样式 */
+  /* Banner */
   .banner-nav {
     position: relative;
     width: 100%;
@@ -93,23 +87,22 @@ html, body {
     z-index: -1;
   }
   
-  /* 导航栏样式 */
+  /* Navigation Bar */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: fixed; /* 固定在页面顶部 */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* 添加过渡效果 */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-/* 滚动后应用的样式 */
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.144); /* 半透明背景 */
-    backdrop-filter: blur(10px); /* 背景模糊 */
+    background-color: rgba(0, 0, 0, 0.144); 
+    backdrop-filter: blur(10px); 
 }
 
   
@@ -126,12 +119,20 @@ html, body {
     margin-right: 20px;
   }
   
-  .topnav a {
+.topnav a {
     color: #ffffff;
     text-decoration: none;
     font-size: 17px;
     padding: 14px 16px;
-  }
+    font-weight: 400; 
+    transition: font-weight 0.3s ease, color 0.3s ease; 
+}
+
+.topnav a:hover {
+    font-weight: 700; 
+    color: #ffffff; 
+}
+
   
   .banner-content {
     position: absolute;
@@ -149,7 +150,7 @@ html, body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
   
-  /* Centered Section 样式 */
+  /* Centered Section */
   .center-section {
     width: 90%;
     height: 500px;
@@ -161,14 +162,14 @@ html, body {
   }
   
   .fade-in-section {
-    opacity: 0; /* 初始透明 */
-    transform: translateY(30px); /* 初始位置偏移 */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* 动画效果 */
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
 .fade-in-section.is-visible {
-    opacity: 1; /* 滚动进入视口后完全显示 */
-    transform: translateY(0); /* 位置归位 */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 
@@ -182,53 +183,50 @@ html, body {
     z-index: -1;
   }
   
-/* 初始状态 */
-/* 父容器样式，确保标题居中 */
+
 .center-content {
-    position: relative; /* 为绝对定位的子元素提供定位参照 */
-    height: 100%; /* 确保容器占满父级高度 */
-    text-align: center; /* 水平居中 */
-    padding: 20px; /* 添加适当内边距，防止内容靠近边缘 */
-    box-sizing: border-box; /* 包括内边距 */
-    display: flex; /* 使用 flexbox 布局 */
-    flex-direction: column; /* 垂直排列 */
-    justify-content: center; /* 标题垂直居中 */
-    align-items: center; /* 水平居中 */
+    position: relative; 
+    height: 100%; 
+    text-align: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
 }
 
-/* 标题样式 */
 .section-title {
     font-size: 24px;
-    margin: 0; /* 清除默认外边距 */
-    color: white; /* 白色字体 */
-    z-index: 2; /* 确保标题层级高于额外内容 */
-    transition: transform 0.5s ease; /* 鼠标掠过动画 */
+    margin: 0; 
+    color: white; 
+    z-index: 2; 
+    transition: transform 0.5s ease; 
 }
 
-/* 额外内容样式 */
+
 .section-extra {
-    position: absolute; /* 绝对定位，不影响标题布局 */
-    bottom: 20px; /* 距离容器底部一定距离 */
-    left: 50%; /* 水平居中 */
-    transform: translateX(-50%); /* 精确居中对齐 */
-    opacity: 0; /* 初始隐藏 */
-    transition: opacity 0.5s ease, transform 1s ease; /* 渐显与上移动画 */
-    font-size: 16px; /* 字体大小 */
-    line-height: 1.5; /* 行间距 */
-    color: white; /* 白色字体 */
-    max-width: 90%; /* 限制内容宽度，避免太宽 */
-    text-align: center; /* 内容居中对齐 */
-    box-sizing: border-box; /* 包括内边距 */
+    position: absolute; 
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+    opacity: 0; 
+    transition: opacity 0.5s ease, transform 1s ease; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: white; 
+    max-width: 90%; 
+    text-align: center; 
+    box-sizing: border-box; 
 }
 
-/* 鼠标掠过效果 */
 .center-section:hover .section-title {
-    transform: translateY(-50px); /* 标题微微上移 */
+    transform: translateY(-50px); 
 }
 
 .center-section:hover .section-extra {
-    opacity: 1; /* 渐显 */
-    transform: translateX(-50%) translateY(-80%); /* 保持水平居中，上移归位 */
+    opacity: 1; 
+    transform: translateX(-50%) translateY(-80%); 
 }
 
 
