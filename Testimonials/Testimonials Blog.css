@@ -1,0 +1,107 @@
+.testimonials-final {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonials-final .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 2818px;
+  position: relative;
+}
+
+.testimonials-final .overlap {
+  position: absolute;
+  width: 1441px;
+  height: 453px;
+  top: 0;
+  left: 0;
+}
+
+.testimonials-final .rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 453px;
+  top: 0;
+  left: 1px;
+  background-color: #d9d9d9;
+}
+
+.testimonials-final .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.testimonials-final .text-wrapper-2 {
+  position: relative;
+  width: 60px;
+  height: 22px;
+  margin-top: -1.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.testimonials-final .group {
+  position: absolute;
+  width: 220px;
+  height: 63px;
+  top: 27px;
+  left: 24px;
+}
+
+.testimonials-final .overlap-group {
+  position: relative;
+  width: 218px;
+  height: 63px;
+  background-color: #b5b5b5;
+}
+
+.testimonials-final .text-wrapper-3 {
+  position: absolute;
+  width: 140px;
+  height: 38px;
+  top: 13px;
+  left: 36px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.testimonials-final .text-wrapper-4 {
+  position: absolute;
+  width: 691px;
+  height: 84px;
+  top: 183px;
+  left: 375px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
