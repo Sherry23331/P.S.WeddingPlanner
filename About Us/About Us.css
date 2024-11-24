@@ -241,6 +241,50 @@ button.navbar-toggler {
   color: white;
 }
 
+
+
+/* Scrollable Photos Container */
+.scroll-photos {
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-photos .photo-track {
+  display: flex;
+  width: calc(200px * 6 * 2 + 10px * 11); /* 图片宽度 * 图片数量 * 2 + 间隙 */
+  animation: scrollPhotos 20s linear infinite;
+}
+
+.scroll-photos .photo-track img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-photos .photo-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollPhotos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
 /* Video Section */
 .videos {
   padding: 50px;
