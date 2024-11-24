@@ -1,0 +1,315 @@
+/* -------------------- Header ------------------ */
+/* Defual Setting */
+body {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    z-index: 3;
+}
+
+@media (max-width: 450px) {
+    #navbar-logo {
+        max-width: 230px;
+    }
+}
+
+.navbar.scrolled {
+    background-color: #262626;
+}
+
+#collapsibleNavbar.expanded {
+    background-color: #32B7A1;
+}
+
+.nav-link {
+    color: #FAFAFA;
+    margin-right: 55px;
+}
+
+.nav-link:hover {
+    color: #FAFAFA;
+    font-weight: bold;
+}
+
+#activeLink {
+    color: #FAFAFA;
+    font-weight: bold;
+    border-bottom: 2px solid #FAFAFA;
+}
+
+button.navbar-toggler {
+    color: #32B7A1;
+    background-color: #FFE2D1;
+    margin-right: 40px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 453px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.banner-title {
+    margin-bottom: 25px;
+}
+
+.banner-description {
+    margin-bottom: 40px;
+}
+
+.serviceButton {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #FFE2D1;
+    color: #3B645D;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.serviceButton:hover {
+    background-color: #ffffff;
+}
+
+/* -------------------- Home Page Content ------------------ */
+/* The “P.S.” Philosophy */
+#section-philosophy {
+    margin-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.subtitle {
+    color: #32B7A1;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* From The P.S. Wedding Blog */
+.section-blog {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+}
+
+.blogThumbnail {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 16px;
+    margin: 0px;
+}
+
+.cardDescription {
+    padding: 0 16px;
+}
+
+.blogCard {
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.blogCard:hover {
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+/* Why Hire a Wedding Planner?  */
+.section-why {
+    margin-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.prizeImage {
+    padding: 52px;
+    width: 100%;
+}
+
+/* Testimonials  */
+.section-testimonials {
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 1900px) {
+    #carousel-control-prev {
+        padding: 24px;
+        justify-content: left;
+    }
+
+    #carousel-control-next {
+        padding: 24px;
+        justify-content: right;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url('./images/arrow-left.svg');
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('./images/arrow-right.svg');
+    width: 45px;
+    height: 45px;
+}
+
+.testimonialCard {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.testimonialCard:hover {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.testimonialImage {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.47%, #000 100%);
+    z-index: 1;
+    object-fit: cover;
+}
+
+.description-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------- Footer ------------------ */
+.contactLink {
+    background-color: #32B7A1;
+    padding: 50px;
+}
+
+.slogan {
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.contactInfo {
+    color: #ffffff;
+    padding-left: 50px;
+    margin-top: 16px;
+}
+
+.socialPlatform {
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.socialPlatform li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.socialPlatform li a {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.socialPlatform li a:hover {
+    color: #32B7A1;
+    background: #e3e1e1;
+}
+
+.copyright {
+    background-color: #268C7C;
+    padding: 24px;
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0px;
+    color: #FFE2D1;
+}
