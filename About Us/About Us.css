@@ -4,136 +4,136 @@
 
 /* Defual Setting */
 body {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1rem;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 h1 {
-    font-family: "Cardo", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3rem;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 h2 {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2rem;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 h3 {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Navigation Bar */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-    transition: all 0.2s ease;
-    z-index: 3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  z-index: 3;
 }
 
 @media (max-width: 450px) {
-    #navbar-logo {
-        max-width: 230px;
-    }
+  #navbar-logo {
+    max-width: 230px;
+  }
 }
 
 .navbar.scrolled {
-    background-color: #262626;
+  background-color: #262626;
 }
 
 #collapsibleNavbar.expanded {
-    background-color: #32B7A1;
+  background-color: #32B7A1;
 }
 
 .nav-link {
-    color: #FAFAFA;
-    margin-right: 55px;
+  color: #FAFAFA;
+  margin-right: 55px;
 }
 
 .nav-link:hover {
-    color: #FAFAFA;
-    font-weight: bold;
+  color: #FAFAFA;
+  font-weight: bold;
 }
 
 #activeLink {
-    color: #FAFAFA;
-    font-weight: bold;
-    border-bottom: 2px solid #FAFAFA;
+  color: #FAFAFA;
+  font-weight: bold;
+  border-bottom: 2px solid #FAFAFA;
 }
 
 button.navbar-toggler {
-    color: #32B7A1;
-    background-color: #FFE2D1;
-    margin-right: 40px;
+  color: #32B7A1;
+  background-color: #FFE2D1;
+  margin-right: 40px;
 }
 
 /* Banner */
 .banner {
-    position: relative;
-    height: 453px;
-    overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
+  position: relative;
+  height: 453px;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .text-overlay {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    top: 60%;
-    transform: translateY(-50%);
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 60%;
+  transform: translateY(-50%);
 }
 
 .banner-title {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .banner-description {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .serviceButton {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #FFE2D1;
-    color: #3B645D;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #FFE2D1;
+  color: #3B645D;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .serviceButton:hover {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 
@@ -265,62 +265,70 @@ video {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+/* -------------------- Back to Top Button ------------------ */
+#btn-back-to-top {
+  font-size: 50px;
+  position: fixed;
+  bottom: 380px;
+  right: 80px;
+  display: none;
+  color: #32B7A1;
+}
 /* -------------------- Footer ------------------ */
 .contactLink {
-    background-color: #32B7A1;
-    padding: 50px;
+  background-color: #32B7A1;
+  padding: 50px;
 }
 
 .slogan {
-    color: #ffffff;
-    padding-left: 50px;
-    padding-right: 100px;
-    padding-top: 10px;
+  color: #ffffff;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-top: 10px;
 }
 
 .contactInfo {
-    color: #ffffff;
-    padding-left: 50px;
-    margin-top: 16px;
+  color: #ffffff;
+  padding-left: 50px;
+  margin-top: 16px;
 }
 
 .socialPlatform {
-    color: #FFFFFF;
-    padding: 0px;
+  color: #FFFFFF;
+  padding: 0px;
 }
 
 .socialPlatform li {
-    display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
 
 }
 
 .socialPlatform li a {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #FFFFFF;
-    border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border-radius: 5px;
 }
 
 .socialPlatform li a:hover {
-    color: #32B7A1;
-    background: #e3e1e1;
+  color: #32B7A1;
+  background: #e3e1e1;
 }
 
 .copyright {
-    background-color: #268C7C;
-    padding: 24px;
-    text-align: center;
+  background-color: #268C7C;
+  padding: 24px;
+  text-align: center;
 }
 
 .copyright p {
-    margin: 0px;
-    color: #FFE2D1;
+  margin: 0px;
+  color: #FFE2D1;
 }
