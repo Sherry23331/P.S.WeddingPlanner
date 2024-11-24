@@ -240,13 +240,21 @@
             </div>
 
             <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" id="carousel-control-prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"
+                id="carousel-control-prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" id="carousel-control-next">
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"
+                id="carousel-control-next">
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
+    </section>
+    <!------------------------------ Back to Top Button ------------------------------>
+    <section class="backToTop">
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </button>
     </section>
     <!------------------------------ Footer ------------------------------>
     <footer>
@@ -271,12 +279,18 @@
                         <div class="contactInfo">
                             <h3>Follow Us</h3>
                             <ul class="socialPlatform">
-                                <li><a href="https://www.facebook.com/pseventful"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/pseventful"><i class="bi bi-facebook"></i></a>
+                                </li>
                                 <li><a href="https://twitter.com/PSEventful"><i class="bi bi-twitter-x"></i></a></li>
-                                <li><a href="https://www.instagram.com/pseventful/"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/p-s-eventful?trk=prof-following-company-logo"><i class="bi bi-linkedin"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCc6klGQF1AAD-rw0wnUIIEg"><i class="bi bi-youtube"></i></a></li>
-                                <li><a href="https://www.pinterest.com/pseventful/"><i class="bi bi-pinterest"></i></a></li>
+                                <li><a href="https://www.instagram.com/pseventful/"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li><a
+                                        href="https://www.linkedin.com/company/p-s-eventful?trk=prof-following-company-logo"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCc6klGQF1AAD-rw0wnUIIEg"><i
+                                            class="bi bi-youtube"></i></a></li>
+                                <li><a href="https://www.pinterest.com/pseventful/"><i class="bi bi-pinterest"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -293,19 +307,23 @@
         var navbar = document.querySelector("#navbar");
         var navbarToggler = document.querySelector("#navbar-toggler");
         var navbarCollapse = document.querySelector('#collapsibleNavbar');
+        var backbutton = document.getElementById("btn-back-to-top");
 
 
         //eventlisteners//
         window.addEventListener("scroll", whenScroll);
         navbarCollapse.addEventListener('shown.bs.collapse', whenShown);
         navbarCollapse.addEventListener('hidden.bs.collapse', whenHidden);
+        backbutton.addEventListener("click", backToTop);
 
         //functions// 
         function whenScroll() {
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
+                backbutton.style.display = "block";
             } else {
                 navbar.classList.remove('scrolled');
+                backbutton.style.display = "none";
             }
         };
         function whenShown() {
@@ -314,6 +332,10 @@
         function whenHidden() {
             navbarCollapse.classList.add('whenHidden');
         };
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
