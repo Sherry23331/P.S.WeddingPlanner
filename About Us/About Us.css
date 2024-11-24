@@ -1,113 +1,140 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+
+/* Defual Setting */
+body {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f8f8f8;
-  margin: 0;
+h1 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Navigation Bar */
-header {
-  background-color: #d3d3d3;
-  padding: 20px;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    z-index: 3;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 450px) {
+    #navbar-logo {
+        max-width: 230px;
+    }
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.navbar.scrolled {
+    background-color: #262626;
 }
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+#collapsibleNavbar.expanded {
+    background-color: #32B7A1;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+.nav-link {
+    color: #FAFAFA;
+    margin-right: 55px;
 }
 
-.nav-menu a:hover {
-  color: #555;
+.nav-link:hover {
+    color: #FAFAFA;
+    font-weight: bold;
 }
 
-
-/* 初始隐藏导航栏 */
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
+#activeLink {
+    color: #FAFAFA;
+    font-weight: bold;
+    border-bottom: 2px solid #FAFAFA;
 }
 
-/* 显示时的样式 */
-#navbar.visible {
-  transform: translateY(0);
+button.navbar-toggler {
+    color: #32B7A1;
+    background-color: #FFE2D1;
+    margin-right: 40px;
 }
 
-/* 向下翻转动画 */
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+/* Banner */
+.banner {
+    position: relative;
+    height: 453px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* 动画应用到导航栏 */
-#navbar.visible {
-  animation: slideDown 0.3s ease-in-out;
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-/* About Us Banner */
-.about-us {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 30px 0;
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
 }
 
-.about-us h1 {
-  font-size: 2rem; 
-  font-weight: bold;
-  margin: 50px 0;
+.banner-title {
+    margin-bottom: 25px;
 }
 
-.about-banner {
-  background-image: url('images/members.jpg');
-  background-size: cover; 
-  background-position: center;
-  background-attachment: fixed; 
-  height: 300px; 
-  width: 100%; 
+.banner-description {
+    margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
-  #navbar {
-    font-size: 0.9rem;
-  }
+.serviceButton {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #FFE2D1;
+    color: #3B645D;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
+.serviceButton:hover {
+    background-color: #ffffff;
+}
 
 
 /* Team Section */
@@ -199,15 +226,19 @@ nav {
 
 .cta .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  padding: 10px 40px;
+  background-color: #FFE2D1;
+  color: #32B7A1;
   text-decoration: none;
   border-radius: 5px;
 }
 
+
+
+
 .cta .btn:hover {
-  background-color: #0056b3;
+  background-color: seagreen;
+  color: white;
 }
 
 /* Video Section */
@@ -235,47 +266,61 @@ video {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+/* -------------------- Footer ------------------ */
+.contactLink {
+    background-color: #32B7A1;
+    padding: 50px;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 50px;
+.slogan {
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
 }
 
-.footer-content div {
-  flex: 1;
+.contactInfo {
+    color: #ffffff;
+    padding-left: 50px;
+    margin-top: 16px;
 }
 
-.footer-content h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.socialPlatform {
+    color: #FFFFFF;
+    padding: 0px;
 }
 
-.footer-content p,
-.footer-content a {
-  font-size: 14px;
-  color: #ccc;
+.socialPlatform li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
 }
 
-.footer-content a {
-  text-decoration: none;
+.socialPlatform li a {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
 }
 
-.footer-content a:hover {
-  color: #fff;
+.socialPlatform li a:hover {
+    color: #32B7A1;
+    background: #e3e1e1;
 }
 
-footer p {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #aaa;
+.copyright {
+    background-color: #268C7C;
+    padding: 24px;
+    text-align: center;
 }
 
+.copyright p {
+    margin: 0px;
+    color: #FFE2D1;
+}
