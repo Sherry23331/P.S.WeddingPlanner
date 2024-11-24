@@ -255,6 +255,16 @@ button.navbar-toggler {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+/* -------------------- Back to Top Button ------------------ */
+#btn-back-to-top {
+    font-size: 50px;
+    position: fixed;
+    bottom: 380px;
+    right: 80px;
+    display: none;
+    color: #32B7A1;
+  }
 /* -------------------- Footer ------------------ */
 .contactLink {
     background-color: #32B7A1;
