@@ -1,0 +1,427 @@
+/* -------------------- Header ------------------ */
+/* Defual Setting */
+body {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+/* Styling for the h2 */
+h2 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 36px; /* Reduced from 40px to 36px for a smaller size */
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #32B7A1; /* Ensure proper hex format with '#' */
+}
+
+h3 {
+   font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    z-index: 3;
+}
+
+@media (max-width: 450px) {
+    #navbar-logo {
+        max-width: 230px;
+    }
+}
+
+.navbar.scrolled {
+    background-color: #262626;
+}
+
+#collapsibleNavbar.expanded {
+    background-color: #32B7A1;
+}
+
+.nav-link {
+    color: #FAFAFA;
+    margin-right: 55px;
+}
+
+.nav-link:hover {
+    color: #FAFAFA;
+    font-weight: bold;
+}
+
+#activeLink {
+    color: #FAFAFA;
+    font-weight: bold;
+    border-bottom: 2px solid #FAFAFA;
+}
+
+button.navbar-toggler {
+    color: #32B7A1;
+    background-color: #FFE2D1;
+    margin-right: 40px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 453px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.banner-title {
+    margin-bottom: 25px;
+}
+
+.banner-description {
+    margin-bottom: 40px;
+}
+
+.serviceButton {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #FFE2D1;
+    color: #3B645D;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.serviceButton:hover {
+    background-color: #ffffff;
+}
+
+/* Search bar styling */
+.search-container {
+    float: right;
+    width: 300px;
+    padding: 25px;
+    width: 50%;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+/* -------------------- Home Page Content ------------------ */
+
+h4 {
+    color: #32B7A1;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    }
+
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Adjusted to make boxes larger */
+    max-width: 1400px;
+    margin: 40px auto;
+    gap: 25px; /* Slightly increased gap for even spacing */
+}
+
+/* Box styling */
+.box {
+    position: relative; /* Required for the button to stay in the bottom-right corner */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Larger width */
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    overflow: hidden;
+    min-height: 450px; /* Increased height */
+}
+
+/* Title (h4) and text styling */
+.box h4 {
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+
+/* h4 colors */
+.box1 h4, .box3 h4 {
+    color: #32B7A1; /* Green color for box1 and box3 */
+}
+
+.box2 h4 {
+    color: #959292; /* Grey color for box2 */
+}
+
+.box p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* General Read More Button Styling */
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #32B7A1; /* Default background */
+    color: #FAFAFA; /* Default text color */
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for All Read More Buttons */
+.read-more:hover {
+    background-color: #28a08f; /* Darker green hover effect */
+}
+
+/* Specific Styling for Box2 Read More Button */
+.box2 .read-more {
+    background-color: #FFE2D1; /* Peach background for box2 */
+    color: #000; /* Black text for box2 */
+}
+
+.box2 .read-more:hover {
+    background-color: #FFD3BF; /* Slightly darker peach on hover */
+}
+
+/* Prevent hover text color change for Box1 and Box3 */
+.box1 .read-more:hover, .box3 .read-more:hover {
+    color: #FAFAFA; /* Keep text white on hover */
+}
+
+/* Box-specific backgrounds */
+.box1 {
+    background: rgba(50, 183, 161, 0.16); /* Light green tint */
+    background-image: url("images/background1.jpg"); /* Add your background image here */
+}
+
+.box2 {
+    background-color: rgba(255, 226, 209, 0.39); /* Light peach tint */
+    background-image: url("images/background2.jpg"); /* Add your background image here */
+}
+
+.box3 {
+    background-color: rgba(50, 183, 161, 0.16); /* Light green tint */
+    background-image: url("images/background3.jpg"); /* Add your background image here */
+}
+
+/* Image overlay dimming */
+.background-overlay img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4), 
+                inset 0 -4px 6px rgba(0, 0, 0, 0.2); /* Inner shadow */
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+/*--------Older Posts-----------*/
+/* General styling for the h2 */
+h2 {
+    font-family: "Raleway", serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #32B7A1;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Styling for the post container */
+.post {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width: 80%; /* Constrains posts width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #32B7A1;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Updated Pagination styling */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px; /* Reduced gap between items */
+    justify-content: flex-end; /* Keeps pagination aligned to the right */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination a,
+.pagination span {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal; /* Removed bold font weight */
+    color: #666;
+    background-color: transparent;
+}
+
+.pagination a:hover {
+    background-color: #e6f8f7; /* Light green background on hover */
+    color: #333;
+}
+
+.pagination a.active {
+    background-color: #cfece9; /* Matches the style from the image */
+    color: #000;
+    pointer-events: none; /* Disable click for active page */
+}
+
+/* -------------------- Footer ------------------ */
+.contactLink {
+    background-color: #32B7A1;
+    padding: 50px;
+}
+
+.slogan {
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.contactInfo {
+    color: #ffffff;
+    padding-left: 50px;
+    margin-top: 16px;
+}
+
+.socialPlatform {
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.socialPlatform li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.socialPlatform li a {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.socialPlatform li a:hover {
+    color: #32B7A1;
+    background: #e3e1e1;
+}
+
+.copyright {
+    background-color: #268C7C;
+    padding: 24px;
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0px;
+    color: #FFE2D1;
+}

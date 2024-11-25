@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchPosts()">
+</div>
+<script>
+    function searchPosts() {
+        // Get the search term
+        const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+
+        // Get all post elements
+        const posts = document.querySelectorAll(".box, .post");
+
+        // Loop through posts and filter
+        posts.forEach(post => {
+            const text = post.innerText.toLowerCase();
+            if (text.includes(searchTerm)) {
+                post.style.display = ""; // Show matching post
+            } else {
+                post.style.display = "none"; // Hide non-matching post
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
