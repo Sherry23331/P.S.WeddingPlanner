@@ -151,6 +151,30 @@ html, body {
   }
   
   /* Centered Section */
+  a .center-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+a .center-section:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:focus, a:active {
+    outline: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: #32B7A1;
+}
+
+
   .center-section {
     width: 90%;
     height: 500px;
@@ -288,3 +312,117 @@ html, body {
     margin: 0px;
     color: #FFE2D1;
 }
+
+
+/*Type page css*/
+/* Wedding package section */
+.wedding-package {
+    display: flex;
+    align-items: center; 
+    background-color: #FFE2D1;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .image-container {
+    flex-shrink: 0;
+    width: 40%; 
+    position: relative;
+  }
+  
+
+  .image-container img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+  }
+  
+
+.image-text-overlay .icon-image {
+    width: 80px; 
+    height: 80px; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+  }
+  
+
+  .image-text-overlay {
+    position: absolute; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-family: 'Cardo', serif; 
+    font-size: 40px; 
+    font-weight: bold; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    display: inline-flex; 
+    align-items: center; 
+  }
+
+/* Wedding package text */
+.text-content {
+    flex-grow: 1; 
+    max-width: 55%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding-left: 30px; 
+  }
+  
+  .text-content h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    color: #333;
+    text-align: left;
+  }
+  
+  .text-content p {
+    margin: 10px 0 15px;
+    color: #555; 
+    line-height: 1.8;
+    font-size: 16px; 
+    text-align: left; 
+  }
+  
+  .text-content .info-link {
+    text-decoration: none; 
+    color: #32B7A1; 
+    font-weight: bold; 
+    margin-top: 10px; 
+    font-size: 16px; 
+    text-align: left; 
+  }
+
+.wedding-package:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.wedding-package:hover .info-link {
+    color: #268C7C; 
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
