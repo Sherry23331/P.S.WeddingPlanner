@@ -45,6 +45,7 @@
 .logo {
   width: 247.059px;
   height: 70px;
+  margin-left: 120px;
 }
 
 .nav-links {
@@ -90,7 +91,7 @@
   font-size: 16px;
   font-weight: 500;
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #32B7A1;
   border-radius: 5px;
 }
 
@@ -117,6 +118,7 @@
         .logo {
             display: flex;
             align-items: center;
+            margin-left: 130px;
         }
 
 
@@ -197,19 +199,6 @@
 .logo-section {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    background-color: #39B0A0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    margin-right: 10px;
 }
 
 .logo-text {
