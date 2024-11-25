@@ -70,8 +70,14 @@
 
     <!-- Search Bar -->
     <div class="search-container">
-        <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchPosts()">
+        <input type="text" id="searchBar" placeholder="Search..." onclick="showOptions()" onkeyup="filterOptions()">
+        <div id="searchOptions" class="options">
+            <div class="option" onclick="navigateTo('about.html')">About Us</div>
+            <div class="option" onclick="navigateTo('contact.html')">Contact Us</div>
+            <div class="option" onclick="navigateTo('blog.html')">Blog</div>
+        </div>
     </div>
+    
 
     <!------------------------------ Page Content ------------------------------>
     <h2>POPULAR POSTS</h2>
@@ -164,6 +170,7 @@
                             <h3>Contact US</h3>
                             <p>123 456 7890</p>
                         </div>
+                        <footer>
 
 <!-- Search Functions-->
 <script>
@@ -184,5 +191,43 @@
             }
         });
     }
+
+
+function showOptions() {
+    document.getElementById('searchOptions').style.display = 'block';
+}
+
+
+function hideOptions() {
+    document.getElementById('searchOptions').style.display = 'none';
+}
+
+
+function navigateTo(url) {
+    window.location.href = url; 
+}
+
+function filterOptions() {
+    const query = document.getElementById('searchBar').value.toLowerCase();
+    const options = document.querySelectorAll('#searchOptions .option');
+
+    options.forEach(option => {
+        const text = option.textContent.toLowerCase();
+        if (text.includes(query)) {
+            option.style.display = 'block';
+        } else {
+            option.style.display = 'none';
+        }
+    });
+}
+
+document.addEventListener('click', (event) => {
+    const searchContainer = document.querySelector('.search-container');
+    if (!searchContainer.contains(event.target)) {
+        hideOptions();
+    }
+});
+
 </script>
 </body>
+<html>
