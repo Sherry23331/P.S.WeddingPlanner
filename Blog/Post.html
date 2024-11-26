@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" herf="index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo1.png" alt="p.s.eventful logo1" id="navbar-logo">
             </a>
             <!-- Togger Button -->
@@ -57,17 +57,17 @@
             </div>
         </div>
     </nav>
+
     <!-- Banner -->
     <div class="container-fluid">
         <div class="banner">
-            <img src="images\banner1.png" alt="Wedding Banner" class="banner-img">
+            <img src="images/banner1.png" alt="Wedding Banner" class="banner-img">
             <div class="text-overlay">
                 <h1 class="banner-title">P.S. WEDDING BLOG</h1>
-                <p class="banner-description">Your wedding day should be as unique and unforgettable as your love story, and we're here to help make that happen. </br>From expert planning tips to inspiring ideas, our wedding blog is your ultimate guide to creating the celebration of your dreams.</p>
+                <p class="banner-description">Your wedding day should be as unique and unforgettable as your love story, and we're here to help make that happen. <br>From expert planning tips to inspiring ideas, our wedding blog is your ultimate guide to creating the celebration of your dreams.</p>
             </div>
         </div>
     </div>
-    <!-- Back to Gallery -->
 
     <!-- Page Contents -->
     <h2>Benefits of a Wedding Guest Book</h2>
@@ -75,7 +75,29 @@
         <p>Date: 23/10/2016</p>
 
         <!-- carousel -->
-
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide fade">
+                <img src="images/img1.png" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/img2.png" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/img3.png" alt="Image 3">
+            </div>
+            <!-- Navigation -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+        </div>
+        
+        <!-- Post Content -->
         <p1>A wedding guestbook is sometimes viewed as an old wedding tradition that does not seem necessary. However, long gone are the days of guests simply writing their names in a book you’ll never look at again. Here are the benefits of the modern wedding guest book:</p1>
 
         <p><b>A keepsake</b>: It can be difficult to save items from your wedding day. Flowers unfortunately do not last, cake will be eaten, and that centrepiece may take up too much space, but a guestbook (in addition to your wedding photos of course) is a great long term keepsake to remember your special day.</p>
@@ -96,9 +118,59 @@
         
         <p>Check out Basic Invite’s collection ofwedding guest booksand be sure to also learnhow to make wedding invitations.</p>
         
-        <p>This post was sponsored byBasic Invite. All opinions stated are my own. Photos courtesy of Basic Invite.</p>
-      
-
+        <p>This post was sponsored by Basic Invite. All opinions stated are my own. Photos courtesy of Basic Invite.</p>
     </div>
 
+    <script>
+        let currentSlideIndex = 0;
 
+// Initialize slideshow
+showSlide(currentSlideIndex);
+
+// Function to display the current slide
+function showSlide(index) {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    // Ensure index is in bounds
+    if (index >= slides.length) {
+        currentSlideIndex = 0;
+    }
+    if (index < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+
+    // Hide all slides and remove active dot class
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    // Show the current slide and highlight the corresponding dot
+    slides[currentSlideIndex].style.display = "block";
+    dots[currentSlideIndex].classList.add("active");
+}
+
+// Change slides with navigation buttons
+function changeSlide(step) {
+    showSlide((currentSlideIndex += step));
+}
+
+// Set a specific slide with dots
+function setSlide(index) {
+    showSlide((currentSlideIndex = index - 1));
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 5000);
+
+
+
+    </script>
+</body>
+
+</html>

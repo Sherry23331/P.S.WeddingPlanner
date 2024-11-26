@@ -4,6 +4,11 @@ body {
     font-size: 16px; 
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* headers */
 h1, h2, h3, .banner-content h1, .section-title {
     font-family: 'Cardo', sans-serif;
@@ -62,12 +67,6 @@ h1, h2, h3, .banner-content h1, .section-title {
     display: block; 
 }
 
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-  }
   
   /* Banner */
   .banner-nav {
@@ -105,7 +104,6 @@ html, body {
     backdrop-filter: blur(10px); 
 }
 
-  
   .logo img {
     max-width: 100%;
     height: auto;
@@ -416,12 +414,12 @@ a:hover {
   
 /*detail pgae*/
 .wedding-planner {
-    background-color: #ffffff; /* Light peach background */
+    background-color: #ffffff;
     padding: 40px 0;
   }
   
   .wedding-planner .container {
-    width: 80%; /* Centered block */
+    width: 80%; 
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -429,7 +427,7 @@ a:hover {
     justify-content: space-between;
     border-radius: 10px;
     padding: 20px;
-    background-color: #FFE2D1; /* White block for content */
+    background-color: #FFE2D1; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -486,10 +484,10 @@ a:hover {
   
 /* Portfolio Section */
 .portfolio-section .container {
-    width: 80%; /* 控制内容宽度 */
+    width: 80%; 
     max-width: 1200px;
-    margin: 0 auto; /* 水平居中 */
-    background-color: #FFE2D1; /* 内容块背景颜色 */
+    margin: 0 auto;
+    background-color: #FFE2D1; 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -499,47 +497,46 @@ a:hover {
   .portfolio-section h2 {
     font-size: 24px;
     color: #333;
-    margin-bottom: 30px; /* 标题和网格的间距 */
+    margin-bottom: 30px; 
   }
   
   .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* 间距 */
+    gap: 20px; 
     justify-content: center;
-    margin-top: 20px; /* 网格与标题的距离 */
+    margin-top: 20px; 
   }
   
   .portfolio-item {
-    position: relative; /* 让叠加层定位相对于父元素 */
-    background-color: #d9d9d9; /* 灰色占位符 */
-    width: calc(25% - 20px); /* 每行 4 个项目，减去间隙 */
-    aspect-ratio: 1 / 1; /* 保持正方形 */
+    position: relative; 
+    background-color: #d9d9d9; 
+    width: calc(25% - 20px); 
+    aspect-ratio: 1 / 1; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* 防止叠加层超出边界 */
+    overflow: hidden; 
   }
   
-  /* 黑色透明叠加层 */
+  /* overlay on portfolio */
   .portfolio-item .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff; /* 文字白色 */
+    color: #fff; 
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    opacity: 0; /* 初始隐藏 */
-    transition: opacity 0.3s ease; /* 平滑过渡 */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
   }
   
-  /* 鼠标悬停时显示叠加层 */
   .portfolio-item:hover .overlay {
     opacity: 1;
   }
@@ -547,14 +544,14 @@ a:hover {
   
   /* testimonials*/
   .testimonials-section {
-    margin: 50px auto; /* 上下外边距 */
+    margin: 50px auto;
   }
   
   .testimonials-section .container {
-    width: 80%; /* 控制内容宽度 */
+    width: 80%;
     max-width: 1200px;
-    margin: 0 auto; /* 水平居中 */
-    background-color: #FFE2D1; /* 内容块背景颜色 */
+    margin: 0 auto;
+    background-color: #FFE2D1;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -564,44 +561,44 @@ a:hover {
   .testimonials-section h2 {
     font-size: 24px;
     color: #333;
-    margin-bottom: 30px; /* 标题和内容的间距 */
+    margin-bottom: 30px; 
   }
   
   .testimonial-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px; /* 每条评价之间的间距 */
-    background-color: #fff; /* 默认背景颜色 */
+    margin-bottom: 20px; 
+    background-color: #fff; 
     padding: 20px;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 默认阴影 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .testimonial-item:nth-child(even) {
-    flex-direction: row-reverse; /* 偶数条目左右布局对调 */
+    flex-direction: row-reverse; 
   }
   
-  /* 鼠标悬停效果 */
+  /* hover of testimonial */
   .testimonial-item:hover {
-    background-color: #ffd8c0; /* 鼠标悬停时背景颜色变浅橙色 */
-    transform: translateY(-5px); /* 轻微向上移动 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 加强阴影效果 */
+    background-color: #ffd8c0; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   .testimonial-image {
-    background-color: #d9d9d9; /* 灰色占位符 */
-    width: 120px; /* 固定图片宽度 */
-    height: 120px; /* 固定图片高度 */
+    background-color: #d9d9d9; 
+    width: 120px; 
+    height: 120px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* 平滑缩放过渡 */
+    transition: transform 0.3s ease; 
   }
   
-  /* 图片悬停缩放 */
+  /* hover to enlarge image */
   .testimonial-item:hover .testimonial-image {
-    transform: scale(1.1); /* 鼠标悬停时图片放大 */
+    transform: scale(1.1); 
   }
   
   .testimonial-item p {
@@ -615,12 +612,12 @@ a:hover {
   /*button*/
   /* Contact Section */
 .contact-section {
-    margin: 40px auto; /* 与其他部分的上下间距 */
+    margin: 40px auto; 
     text-align: center;
   }
   
   .contact-section .container {
-    width: 80%; /* 控制宽度 */
+    width: 80%; 
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -628,17 +625,17 @@ a:hover {
   .contact-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #34b7a1; /* 按钮绿色背景 */
-    color: #FFE2D1; /* 按钮文字粉色 */
+    background-color: #34b7a1; 
+    color: #FFE2D1; 
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none; /* 去掉链接下划线 */
+    text-decoration: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .contact-button:hover {
-    background-color: #2e9e8b; /* 鼠标悬停时按钮颜色变深 */
-    transform: translateY(-2px); /* 鼠标悬停时的微动效果 */
+    background-color: #2e9e8b; 
+    transform: translateY(-2px); 
   }

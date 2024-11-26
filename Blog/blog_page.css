@@ -143,6 +143,7 @@ button.navbar-toggler {
     width: 300px;
     padding: 25px;
     width: 50%;
+    position: relative; 
 }
 
 #searchBar {
@@ -154,6 +155,30 @@ button.navbar-toggler {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     float: right;
 }
+
+#searchOptions {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0; 
+    width: 50%; 
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.option {
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
 
 /* -------------------- Home Page Content ------------------ */
 

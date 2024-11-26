@@ -1,5 +1,5 @@
 /* -------------------- Header ------------------ */
-/* Defual Setting */
+/* Default Setting */
 body {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h3 {
-   font-family: "Raleway", serif;
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -125,14 +125,14 @@ button.navbar-toggler {
     background-color: #ffffff;
 }
 
-/*Contents*/
+/* Contents */
 h2 {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: italic;
-    font-size: 42px; /* Reduced from 40px to 36px for a smaller size */
-    color: #32B7A1; /* Ensure proper hex format with '#' */
+    font-size: 42px;
+    color: #32B7A1;
     text-align: center;
     padding: 50px;
 }
@@ -143,15 +143,94 @@ h2 {
     padding: 10px;
 }
 
-p{
+p {
     font-size: 16px;
     margin-bottom: 15px;
     padding: 10px;
     line-height: 30px;
 }
 
-p1{
+p1 {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
 }
+
+/* -------------------- Slideshow ------------------ */
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slides */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Transition Effect */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
