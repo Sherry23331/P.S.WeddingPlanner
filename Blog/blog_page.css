@@ -21,10 +21,10 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
-    font-size: 36px; /* Reduced from 40px to 36px for a smaller size */
+    font-size: 36px; 
     padding-top: 50px;
     padding-left: 50px;
-    color: #32B7A1; /* Ensure proper hex format with '#' */
+    color: #32B7A1; 
 }
 
 h3 {
@@ -181,6 +181,9 @@ button.navbar-toggler {
 
 
 /* -------------------- Home Page Content ------------------ */
+a {
+  text-decoration: none;
+}
 
 h4 {
     color: #32B7A1;
@@ -195,26 +198,26 @@ h4 {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 90%; /* Adjusted to make boxes larger */
+    width: 90%; 
     max-width: 1400px;
     margin: 40px auto;
-    gap: 25px; /* Slightly increased gap for even spacing */
+    gap: 25px; 
 }
 
 /* Box styling */
 .box {
-    position: relative; /* Required for the button to stay in the bottom-right corner */
+    position: relative; 
     border-radius: 10px;
     padding: 20px;
-    width: 30%; /* Larger width */
+    width: 30%; 
     text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #333;
     overflow: hidden;
-    min-height: 450px; /* Increased height */
+    min-height: 450px; 
 }
 
 /* Title (h4) and text styling */
@@ -227,11 +230,11 @@ h4 {
 
 /* h4 colors */
 .box1 h4, .box3 h4 {
-    color: #32B7A1; /* Green color for box1 and box3 */
+    color: #32B7A1; 
 }
 
 .box2 h4 {
-    color: #959292; /* Grey color for box2 */
+    color: #959292; 
 }
 
 .box p {
@@ -248,8 +251,8 @@ h4 {
     right: 20px;
     display: inline-block;
     padding: 8px 16px;
-    background-color: #32B7A1; /* Default background */
-    color: #FAFAFA; /* Default text color */
+    background-color: #32B7A1; 
+    color: #FAFAFA; 
     font-family: Raleway, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -261,38 +264,38 @@ h4 {
 
 /* Hover Effect for All Read More Buttons */
 .read-more:hover {
-    background-color: #28a08f; /* Darker green hover effect */
+    background-color: #28a08f; 
 }
 
 /* Specific Styling for Box2 Read More Button */
 .box2 .read-more {
-    background-color: #FFE2D1; /* Peach background for box2 */
-    color: #000; /* Black text for box2 */
+    background-color: #FFE2D1; 
+    color: #000; 
 }
 
 .box2 .read-more:hover {
-    background-color: #FFD3BF; /* Slightly darker peach on hover */
+    background-color: #FFD3BF; 
 }
 
 /* Prevent hover text color change for Box1 and Box3 */
 .box1 .read-more:hover, .box3 .read-more:hover {
-    color: #FAFAFA; /* Keep text white on hover */
+    color: #FAFAFA; 
 }
 
 /* Box-specific backgrounds */
 .box1 {
-    background: rgba(50, 183, 161, 0.16); /* Light green tint */
-    background-image: url("images/background1.jpg"); /* Add your background image here */
+    background: rgba(50, 183, 161, 0.16); 
+    background-image: url("images/background1.jpg"); 
 }
 
 .box2 {
-    background-color: rgba(255, 226, 209, 0.39); /* Light peach tint */
-    background-image: url("images/background2.jpg"); /* Add your background image here */
+    background-color: rgba(255, 226, 209, 0.39); 
+    background-image: url("images/background2.jpg"); 
 }
 
 .box3 {
-    background-color: rgba(50, 183, 161, 0.16); /* Light green tint */
-    background-image: url("images/background3.jpg"); /* Add your background image here */
+    background-color: rgba(50, 183, 161, 0.16); 
+    background-image: url("images/background3.jpg"); 
 }
 
 /* Image overlay dimming */
@@ -301,13 +304,15 @@ h4 {
     height: auto;
     border-radius: 10px;
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4), 
-                inset 0 -4px 6px rgba(0, 0, 0, 0.2); /* Inner shadow */
+                inset 0 -4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .divider {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
  }
 
 /*--------Older Posts-----------*/
@@ -330,7 +335,7 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     background-color: #fff;
-    max-width: 80%; /* Constrains posts width */
+    max-width: 80%; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -363,8 +368,8 @@ h2 {
 .pagination {
     margin-top: 30px;
     display: flex;
-    gap: 5px; /* Reduced gap between items */
-    justify-content: flex-end; /* Keeps pagination aligned to the right */
+    gap: 5px; 
+    justify-content: flex-end; 
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -376,20 +381,20 @@ h2 {
     border-radius: 5px;
     font-size: 16px;
     text-decoration: none;
-    font-weight: normal; /* Removed bold font weight */
+    font-weight: normal; 
     color: #666;
     background-color: transparent;
 }
 
 .pagination a:hover {
-    background-color: #e6f8f7; /* Light green background on hover */
+    background-color: #e6f8f7; 
     color: #333;
 }
 
 .pagination a.active {
-    background-color: #cfece9; /* Matches the style from the image */
+    background-color: #cfece9; 
     color: #000;
-    pointer-events: none; /* Disable click for active page */
+    pointer-events: none; 
 }
 
 /* -------------------- Footer ------------------ */
