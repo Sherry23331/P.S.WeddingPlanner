@@ -267,6 +267,7 @@ button.navbar-toggler {
     right: 80px;
     display: none;
     color: #32B7A1;
+    z-index: 4;
   }
 /* -------------------- Footer ------------------ */
 .contactLink {
