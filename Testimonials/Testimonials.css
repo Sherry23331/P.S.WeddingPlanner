@@ -58,7 +58,7 @@ ul, li {
 a {
   text-decoration: none;
   color: inherit;
-  display: inline-block; /* 确保一致性 */
+  display: inline-block; 
 }
 p {
     font-size: 20px;
