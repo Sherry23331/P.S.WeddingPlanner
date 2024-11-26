@@ -30,105 +30,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero-title{
-    font-size: xxx-large;
-}
-
-/* Navbar Styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-    transition: all 0.2s ease;
-    z-index: 3;
-}
-
-@media (max-width: 450px) {
-    #navbar-logo {
-        max-width: 230px;
-    }
-}
-
-.navbar.scrolled {
-    background-color: #262626;
-}
-
-#collapsibleNavbar.expanded {
-    background-color: #32B7A1;
-}
-
-.nav-link {
-    color: #FAFAFA;
-    margin-right: 55px;
-}
-
-.nav-link:hover {
-    color: #FAFAFA;
-    font-weight: bold;
-}
-
-#activeLink {
-    color: #FAFAFA;
-    font-weight: bold;
-    border-bottom: 2px solid #FAFAFA;
-}
-
-button.navbar-toggler {
-    color: #32B7A1;
-    background-color: #FFE2D1;
-    margin-right: 40px;
-}
-
-/* Banner */
-.banner {
-    position: relative;
-    height: 453px;
-    overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.text-overlay {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    top: 60%;
-    transform: translateY(-50%);
-}
-
-.banner-title {
-    margin-bottom: 25px;
-}
-
-.banner-description {
-    margin-bottom: 40px;
-}
-
-.serviceButton {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #FFE2D1;
-    color: #3B645D;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-}
-
-.serviceButton:hover {
-    background-color: #ffffff;
-}
-
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -138,6 +39,101 @@ button.navbar-toggler {
     justify-content: space-between;
 }
 
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+@media (max-width: 450px) {
+  #navbar-logo {
+    max-width: 230px;
+  }
+}
+
+.navbar.scrolled {
+  background-color: #262626;
+}
+
+#collapsibleNavbar.expanded {
+  background-color: #32B7A1;
+}
+
+.nav-link {
+  color: #FAFAFA;
+  margin-right: 55px;
+}
+
+.nav-link:hover {
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+#activeLink {
+  color: #FAFAFA;
+  font-weight: bold;
+  font-size: larger;
+/*  border-bottom: 2px solid #FAFAFA;*/
+}
+
+button.navbar-toggler {
+  color: #32B7A1;
+  background-color: #FFE2D1;
+  margin-right: 40px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 453px;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.banner-title {
+  margin-bottom: 25px;
+}
+
+.banner-description {
+  margin-bottom: 40px;
+}
+
+.serviceButton {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #FFE2D1;
+  color: #3B645D;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.serviceButton:hover {
+  background-color: #ffffff;
+}
 
 /* Back Button Styles */
 .back-button {
@@ -177,8 +173,8 @@ button.navbar-toggler {
         .logo {
             display: flex;
             align-items: center;
-            padding: 0.1rem;
-            margin-top: 0.85rem;
+/*            margin-left: 1.3rem;*/
+            padding: 0.8rem;
         }
 
 
@@ -242,101 +238,61 @@ button.navbar-toggler {
             background-color: #f5f5f5;
             border-radius: 8px;
         }
-        .footer-container {
-    background-color: #FFE4D9;
-    padding: 2rem 4rem;
-    font-family: Arial, sans-serif;
+      /* -------------------- Footer ------------------ */
+.contactLink {
+  background-color: #32B7A1;
+  padding: 50px;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.slogan {
+  color: #ffffff;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-top: 10px;
 }
 
-.logo-section {
-    display: flex;
-    align-items: center;
+.contactInfo {
+  color: #ffffff;
+  padding-left: 50px;
+  margin-top: 16px;
 }
 
-.logo-text {
-    font-family: cursive;
-    font-size: 24px;
-    color: #333;
+.socialPlatform {
+  color: #FFFFFF;
+  padding: 0px;
 }
 
-.contact-section, .social-section {
-    margin-top: 1rem;
+.socialPlatform li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+
 }
 
-.section-title {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 1rem;
+.socialPlatform li a {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border-radius: 5px;
 }
 
-.contact-info {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    color: #333;
-}
-
-.contact-info li i {
-    color: #39B0A0;
-    margin-right: 10px;
-    width: 20px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.social-icon {
-    width: 35px;
-    height: 35px;
-    background-color: #39B0A0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
+.socialPlatform li a:hover {
+  color: #32B7A1;
+  background: #e3e1e1;
 }
 
 .copyright {
-    background-color: #39B0A0;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 14px;
+  background-color: #268C7C;
+  padding: 24px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .contact-section, .social-section {
-        margin-top: 2rem;
-    }
-    
-    .contact-info li {
-        justify-content: center;
-    }
-    
-    .footer-container {
-        padding: 2rem 1rem;
-    }
+.copyright p {
+  margin: 0px;
+  color: #FFE2D1;
 }
