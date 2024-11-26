@@ -30,55 +30,114 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hero-title{
+    font-size: xxx-large;
+}
+
 /* Navbar Styles */
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    z-index: 3;
 }
 
-.logo {
-  width: 247.059px;
-  height: 70px;
-  margin-left: 120px;
+@media (max-width: 450px) {
+    #navbar-logo {
+        max-width: 230px;
+    }
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
+.navbar.scrolled {
+    background-color: #262626;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+#collapsibleNavbar.expanded {
+    background-color: #32B7A1;
 }
 
-/* Hero Content Styles */
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.nav-link {
+    color: #FAFAFA;
+    margin-right: 55px;
 }
 
-.hero-title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.nav-link:hover {
+    color: #FAFAFA;
+    font-weight: bold;
 }
 
-.hero-details {
-  font-size: 18px;
-  margin-bottom: 10px;
+#activeLink {
+    color: #FAFAFA;
+    font-weight: bold;
+    border-bottom: 2px solid #FAFAFA;
 }
+
+button.navbar-toggler {
+    color: #32B7A1;
+    background-color: #FFE2D1;
+    margin-right: 40px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 453px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.banner-title {
+    margin-bottom: 25px;
+}
+
+.banner-description {
+    margin-bottom: 40px;
+}
+
+.serviceButton {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #FFE2D1;
+    color: #3B645D;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.serviceButton:hover {
+    background-color: #ffffff;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /* Back Button Styles */
 .back-button {
@@ -118,7 +177,8 @@
         .logo {
             display: flex;
             align-items: center;
-            margin-left: 130px;
+            padding: 0.1rem;
+            margin-top: 0.85rem;
         }
 
 
