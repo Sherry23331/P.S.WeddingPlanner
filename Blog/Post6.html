@@ -88,58 +88,48 @@
         <p>Date: 21/10/2015</p>
 
     <!-- Carousel -->
-    <section class="section-carousel">
+ <section class="section-carousel">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
+            <!-- Slideshow/Carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="carousel-card">
-                        <img src="images/Post6_1.jpg" alt="image1" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_1.jpg" alt="image1" class="carousel-image">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/Post6_2.png" alt="image2" class="carousel-image">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_2.png" alt="image2" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_3.png" alt="image3" class="carousel-image">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_3.png" alt="image3" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_4.png" alt="image4" class="carousel-image">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_4.png" alt="image4" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_5.png" alt="image5" class="carousel-image">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_5.png" alt="image5" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_6.png" alt="image6" class="carousel-image">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_6.png" alt="image6" class="carousel-image">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <img src="images/Post6_7.png" alt="image7" class="carousel-image">
-                    </div>
+                    <img src="images/Post6_7.png" alt="image7" class="carousel-image">
                 </div>
             </div>
 
+    
             <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"
-                id="carousel-control-prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="bi bi-chevron-left"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"
-                id="carousel-control-next">
-                <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="bi bi-chevron-right"></span>
+                <span class="visually-hidden">Next</span>
             </button>
+            
         </div>
     </section>
+
+
     <!-- Post Content -->
     <p1>As a new year is underway, P.S. Eventful reminisces about our incredible weddings from 2016. From managing a 1000 person South Asian reception to cuing a handful of Horas to bringing many DIY creations to life, 2016 was another year of beautiful, fun, and diverse weddings. <b>Here’s our top 5 P.S. Eventful wedding planner moments of 2016:</b></p1>
 
@@ -211,8 +201,8 @@
 
     <script>
 
- // get navigation element
- const navbar = document.getElementById("navbar");
+// get navigation element
+const navbar = document.getElementById("navbar");
 
 // listen the scroll event
 window.addEventListener("scroll", () => {
@@ -223,48 +213,55 @@ window.addEventListener("scroll", () => {
     }
 });
 
-    let currentSlideIndex = 0;
 
-    // Initialize slideshow
-    showSlide(currentSlideIndex);
+let currentSlideIndex = 0;
 
-    // Function to display the current slide
-    function showSlide(index) {
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
+// Initialize slideshow
+showSlide(currentSlideIndex);
 
-        // Ensure index is in bounds
-        if (index >= slides.length) {
-            currentSlideIndex = 0;
-        }
-        if (index < 0) {
-            currentSlideIndex = slides.length - 1;
-        }
+// Function to display the current slide
+function showSlide(index) {
+let slides = document.getElementsByClassName("slide");
+if (slides.length === 0) {
+console.error("No elements with class 'slide' found.");
+return;
+}
+let dots = document.getElementsByClassName("dot");
 
-        // Hide all slides and remove active dot class
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].classList.remove("active");
-        }
+// Ensure index is in bounds
+if (index >= slides.length) {
+currentSlideIndex = 0;
+}
+if (index < 0) {
+currentSlideIndex = slides.length - 1;
+}
 
-        // Show the current slide and highlight the corresponding dot
-        slides[currentSlideIndex].style.display = "block";
-        dots[currentSlideIndex].classList.add("active");
-    }
+// Hide all slides and remove active dot class
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (let i = 0; i < dots.length; i++) {
+dots[i].classList.remove("active");
+}
 
-    // Change slides with navigation buttons
-    function changeSlide(step) {
-        currentSlideIndex += step;
-        showSlide(currentSlideIndex);
-    }
+// Show the current slide and highlight the corresponding dot
+slides[currentSlideIndex].style.display = "block";
+if (dots[currentSlideIndex]) {
+dots[currentSlideIndex].classList.add("active");
+}
+}
 
-    // Set a specific slide with dots
-    function setSlide(index) {
-        currentSlideIndex = index - 1;
-        showSlide(currentSlideIndex);
-    }
+// Change slides with navigation buttons
+function changeSlide(step) {
+currentSlideIndex += step;
+showSlide(currentSlideIndex);
+}
+
+// Set a specific slide with dots
+function setSlide(index) {
+currentSlideIndex = index - 1;
+showSlide(currentSlideIndex);
+}
     </script>
 </body>
 
