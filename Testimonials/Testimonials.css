@@ -5,7 +5,28 @@ body {
 }
 
 /* headers */
-h1, h2, h3, .banner-content h1, .section-title {
+h1 {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.description {
+    font-size: 40px;
+}
+
+.banner-content h1, 
+
+.section-title {
     font-family: 'Cardo', sans-serif;
     font-weight: 700;
     color: #ffffff; 
@@ -14,6 +35,10 @@ h1, h2, h3, .banner-content h1, .section-title {
 a {
     text-decoration: none;
     color: #32B7A1;
+}
+
+p {
+    font-size: 20px;
 }
 
 a:hover {
@@ -112,6 +137,7 @@ button.navbar-toggler {
   
   .banner-title {
     margin-bottom: 25px;
+
   }
   
   .banner-description {
