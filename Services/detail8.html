@@ -12,35 +12,62 @@
     <link rel="stylesheet" href="Services.css">
 </head>
 <body>
-    <header>
-        <div class="banner-nav">
-            <img src="12.png" alt="Banner Image" class="banner-image">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="logo1.png">
-                </div>
-                <nav class="topnav">
-                    <a href="../index.html">Home</a>
-                    <a href="../About Us/About Us.html">About Us</a>
-                    <div class="dropdown">
-                        <a href="Services.html">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="type.html">Toronto Weddings</a></li>
-                            <li><a href="type2.html">Destination Weddings</a></li>
-                            <li><a href="type3.html">Corporate & Social Events</a></li>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" alt="p.s.eventful logo" id="navbar-logo">
+            </a>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse ml-5" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto" id="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About Us/About Us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="type.html">Toronto Weddings</a></li>
+                            <li><a class="dropdown-item" href="type2.html">Destination Weddings</a></li>
+                            <li><a class="dropdown-item" href="type3.html">Corporate & Social Events</a></li>
                         </ul>
-                    </div>
-                    <a href="../Testimonials/Testimonials.html">Testimonials</a>
-                    <a href="../Blog/Blog.html">Blog</a>
-                    <a href="../Contact Us/Contact Us.html">Contact Us</a>
-                </nav>
-                
-        </div>
-            <div class="banner-content">
-                <h1>CORPORATE EVENTS</h1>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Testimonials/Testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Blog/Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contact Us/Contact Us.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="container-fluid banner">
+        <img src="12.png" alt="Wedding Banner" class="banner-img">
+        <div class="text-overlay">
+            <h1 class="banner-title">CORPORATE EVENTS</h1>
+        </div>
+    </div>
+</header>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa1zYuo2IhK/z4UJiFdKwXu4V8AlBZGJ4lGbu2GExlFlUw1BU5Pyy0PGFuR" crossorigin="anonymous"></script>
+
 
 
     <section class="wedding-planner fade-in-section">
