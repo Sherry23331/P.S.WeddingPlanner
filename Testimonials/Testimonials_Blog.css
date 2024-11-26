@@ -12,7 +12,7 @@
         }
 
         /* Header Styles */
-.header {
+.header-self {
   position: relative;
   height: 100vh;
   background-image: url('https://s3-alpha-sig.figma.com/img/50a4/f847/4d0e26884ca0085730cde8d709827d64?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SVVEaKJrGBQS9o4SiC0~Qh9y7J0bLFX4grTfuOK255Wq2DJ6aYzQCxPqiCjxuM9NhdHdR6s3l8l8lGB9T6R1ftq5rRuu7T8AyBOo6sVLFWHyuUu~zbrqjharPOyo7K6o0hlzZvwtDZJb7EeKUhA01LlQoKlLR0skDs8rTSpoSuDuJPWsA9guUQ9Amh1wiTtAYDQU2NF7MemKuLuusy8MS3LsAjt7ck2wWWmQflzlJRBXOSvEIYliXgj3ekduzWRrRDndh5F6RJj8Agi-Dthe3D-eUGUxp218VdWDkuzzQuez-D4LGdtQHuVeyiemc448GGZPQn7Ta1Lr0FB4CrNZ0A__');
@@ -21,7 +21,7 @@
   color: white;
 }
 
-.overlay {
+.overlay-self {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,8 +76,7 @@
 #activeLink {
   color: #FAFAFA;
   font-weight: bold;
-  font-size: larger;
-/*  border-bottom: 2px solid #FAFAFA;*/
+  border-bottom: 2px solid #FAFAFA;
 }
 
 button.navbar-toggler {
@@ -110,7 +109,7 @@ button.navbar-toggler {
   z-index: 2;
   color: white;
   text-align: center;
-  top: 60%;
+  top: 30%;
   transform: translateY(-50%);
 }
 
