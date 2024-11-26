@@ -151,10 +151,19 @@ p {
 }
 
 p1 {
-    font-size: 20px;
+    font-size: 20px; 
     font-weight: bold;
+    margin: 0 0 15px 0; 
     padding: 10px;
+    line-height: 30px; 
+    display: block; 
 }
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
 /* -------------------- Slideshow ------------------ */
 
@@ -200,37 +209,154 @@ p1 {
     right: 10px;
 }
 
-/* Dots */
-.dots-container {
-    text-align: center;
-    margin-top: 10px;
+/* -------------------- Footer ------------------ */
+.contactLink {
+    background-color: #32B7A1;
+    padding: 50px;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
+.slogan {
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.contactInfo {
+    color: #ffffff;
+    padding-left: 50px;
+    margin-top: 16px;
+}
+
+.socialPlatform {
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.socialPlatform li {
     display: inline-block;
-    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
 }
 
-.dot.active {
-    background-color: #717171;
+.socialPlatform li a {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
 }
 
-/* Transition Effect */
-.fade {
-    animation: fadeEffect 1.5s;
+.socialPlatform li a:hover {
+    color: #32B7A1;
+    background: #e3e1e1;
 }
 
-@keyframes fadeEffect {
-    from {
-        opacity: 0.4;
+.copyright {
+    background-color: #268C7C;
+    padding: 24px;
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0px;
+    color: #FFE2D1;
+}
+
+/*Carousel*/
+.section-carousel {
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 1900px) {
+    #carousel-control-prev {
+        padding: 24px;
+        justify-content: left;
     }
-    to {
-        opacity: 1;
+
+    #carousel-control-next {
+        padding: 24px;
+        justify-content: right;
     }
 }
 
+.carousel-control-prev-icon {
+    background-image: url('./images/arrow-left.svg');
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('./images/arrow-right.svg');
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-card {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.carousel-image {
+    style="width: 300px; height: 300px; object-fit: cover;"
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.47%, #000 100%);
+}
+
+.description-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Next and Previous Section */
+.next-prev{
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.next-prev .prev-link, 
+.next-prev .next-link {
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.next-prev .prev-link:hover, 
+.next-prev .next-link:hover {
+    color: #000000;
+}
+
+/* Back to Gallery */
+.back-gallery{
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+.back-gallery .back-link
+{
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-gallery .back-link:hover
+{
+    color: #000000;
+}
