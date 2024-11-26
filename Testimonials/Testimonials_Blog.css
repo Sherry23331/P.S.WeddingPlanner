@@ -1,16 +1,15 @@
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .body {
+.body {
             font-family: 'Roboto';
             font-size: 20;
             line-height: 1.6;
             color: #333;
         }
+html, body {
+          margin: 0;
+          padding: 0;
+        }
 
+<<<<<<< HEAD
         /* Header Styles */
 .header-self {
   position: relative;
@@ -40,6 +39,15 @@
 }
 
 /* Navbar Styles */
+=======
+        .container-fluid {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        
+
+/* Navigation Bar */
+>>>>>>> cef1086f40b3ae7b026ea997300f0fd211df4bbd
 .navbar {
   position: fixed;
   top: 0;
@@ -51,7 +59,7 @@
 
 @media (max-width: 450px) {
   #navbar-logo {
-    max-width: 230px;
+      max-width: 230px;
   }
 }
 
@@ -85,6 +93,7 @@ button.navbar-toggler {
   margin-right: 40px;
 }
 
+
 /* Banner */
 .banner {
   position: relative;
@@ -105,138 +114,141 @@ button.navbar-toggler {
 }
 
 .text-overlay {
-  position: relative;
+  position: absolute;
   z-index: 2;
   color: white;
   text-align: center;
+<<<<<<< HEAD
   top: 30%;
   transform: translateY(-50%);
+=======
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+>>>>>>> cef1086f40b3ae7b026ea997300f0fd211df4bbd
 }
 
 .banner-title {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
-.banner-description {
-  margin-bottom: 40px;
-}
-
-.serviceButton {
-  display: inline-block;
-  padding: 10px 40px;
-  background-color: #FFE2D1;
-  color: #3B645D;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.serviceButton:hover {
-  background-color: #ffffff;
+.hero-details {
+  margin-bottom: 10px;
 }
 
 /* Back Button Styles */
 .back-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
+  margin-top: 10px; 
   color: white;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 20px;
   background-color: #32B7A1;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-        .image {
-            width: 170px;
-            height: 50px;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            background-position: 50% 50%;
-            opacity: 70%;
-        }
-
-        .image-2 {
-            width: 800px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .main-content-div{
-            width: 800px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-/*            margin-left: 1.3rem;*/
-            padding: 0.8rem;
-        }
+.back-button:hover {
+  background-color: #268C7C;
+}
 
 
-        .logo-text {
-            color: white;
-            margin-left: 1rem;
-            font-size: 1.5rem;
-            font-style: italic;
-        }
 
-        /* Main Content Styles */
-        .main-content {
-            max-width: 800px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
+            .image {
+                width: 170px;
+                height: 50px;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                background-position: 50% 50%;
+                opacity: 70%;
+            }
 
-        .featured-image {
-            width: 100%;
-            height: 400px;
-            background-color: #f0f0f0;
-            margin-bottom: 2rem;
-        }
+            .image-2 {
+                width: 800px;
+                margin: 4rem auto;
+                padding: 0 2rem;
+            }
 
-        .content-section {
-            margin-bottom: 3rem;
-        }
+            .main-content-div{
+                width: 800px;
+            }
 
-        .section-title {
-            font-size: 1.5rem;
-            color: #32B7A1;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
+            .logo {
+                display: flex;
+                align-items: center;
+    /*            margin-left: 1.3rem;*/
+                padding: 0.8rem;
+            }
 
-        .section-content {
-            margin-bottom: 1.5rem;
-        }
 
-        .review-section {
-            background-color: #f9f9f9;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 2rem;
-        }
+            .logo-text {
+                color: white;
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                font-style: italic;
+            }
 
-        .review-title {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 1rem;
-        }
+            /* Main Content Styles */
+            .main-content {
+                max-width: 800px;
+                margin: 4rem auto;
+                padding: 0 2rem;
+            }
 
-        .review-text {
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
+            .featured-image {
+                width: 100%;
+                height: 400px;
+                background-color: #f0f0f0;
+                margin-bottom: 2rem;
+            }
 
-        .planning-section {
-            margin-top: 2rem;
-            padding: 2rem;
-            background-color: #f5f5f5;
-            border-radius: 8px;
-        }
+            .content-section {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                color: #32B7A1;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+
+            .section-content {
+                margin-bottom: 1.5rem;
+            }
+
+            .review-section {
+                background-color: #f9f9f9;
+                padding: 2rem;
+                border-radius: 8px;
+                margin-top: 2rem;
+            }
+
+            .review-title {
+                font-style: italic;
+                color: #666;
+                margin-bottom: 1rem;
+            }
+
+            .review-text {
+                font-size: 0.95rem;
+                line-height: 1.8;
+            }
+
+            .planning-section {
+                margin-top: 2rem;
+                padding: 2rem;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+            }
       /* -------------------- Footer ------------------ */
 .contactLink {
   background-color: #32B7A1;
