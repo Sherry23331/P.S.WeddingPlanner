@@ -7,7 +7,10 @@ body {
     font-style: normal;
     font-size: 1rem;
 }
-
+a {
+    color: #000;
+    text-decoration: none;
+}
 h1 {
     font-family: "Cardo", serif;
     font-weight: 700;
