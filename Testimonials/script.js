@@ -12,3 +12,15 @@ backButton.addEventListener('click', function(event) {
     // window.location.href = '../Testimonials.html';
 });
 
+
+// get navigation element
+const navbar = document.getElementById("navbar");
+
+// listen the scroll event
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        navbar.classList.add("scrolled"); // add "scrolled" 
+    } else {
+        navbar.classList.remove("scrolled"); // remove "scrolled" 
+    }
+});
