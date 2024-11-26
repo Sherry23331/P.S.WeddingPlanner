@@ -295,17 +295,27 @@ p1 {
     }
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* 浅色背景，便于测试 */
+    border-radius: 50%; /* 圆形按钮 */
+    width: 30px;
+    height: 30px;
+}
+
 .carousel-control-prev-icon {
-    background-image: url('./images/arrow-left.svg');
-    width: 45px;
-    height: 45px;
+    background-image: url('images/arrow-left.svg'); /* 替换为你的左箭头图标路径 */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carousel-control-next-icon {
-    background-image: url('./images/arrow-right.svg');
-    width: 45px;
-    height: 45px;
+    background-image: url('images/arrow-right.svg'); /* 替换为你的右箭头图标路径 */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .carousel-card {
     position: relative;
